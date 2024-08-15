@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* start header css */
+
+.top-header{
+    max-width: 1280px;
+    margin: 0px auto;
+     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}  
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info .info-text p:first-child{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.info .info-text p{
+    font-weight: 700;
+    line-height: 5px;
+}
+
+/* nav css */
+.nav-link{
+    color: white;
+    margin: 0px 0px 0px 15px;
+}
+
+/* end of header css */
+
+
+
+/* start  main css */
+
+#hero{
+    background-image: url(images/HeroBackground.webp);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#hero p, h1{
+    color: white;
+}
+
+.span-red{
+    color: red;
+}
+
+.hero-text{
+    margin: 65px 0px 0px 130px;
+}
+.hero-text h1{
+    font-weight: bold;
+    
+}
+
+/* treatment css */
+#treatment ul a {
+    text-decoration: none;
+    color: #5d5d5d;
+}
+#treatment ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 100px;
+}
+
+/* Overview css */
+#Overview h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#Overview p{
+    color: gray;
+}
+
+
+/* treatments css */
+.Treatment-details h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.Treatment-details p, li{
+    color: gray;
+}
+
+/* faq treatments */
+
+.FAQ-treat {
+    background-color: white;
+    cursor: pointer;
+    padding: 15px 40px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    position: relative;
+    border-bottom: 1px solid grey;
+}
+
+.FAQ-treat:before {
+    content: '\002B';
+    color: lightblue;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+
+}
+
+.FAQ-treat.active, .FAQ-treat:hover {
+    background-color: #e1e1e1;
+}
+
+.FAQ-treat .active:before {
+    content: "\2212";
+}
+
+.para {
+    padding: 0 30px;
+    background-color: var(--white);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.para p {
+    padding: 10px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-left: 2px solid var(--light-blue);
+}
+
+/* form css */
+
+.need-help-form{
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.need-help-form h3{
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.need-help-form input, .need-help-form textarea{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    border: 1px solid #bdbdbd;
+    
+}
+
+.need-help-form .submit-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    background-color: #4791ff;
+    transition: background-color 0.3s;
+}
+
+.need-help-form .submit-btn:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+/* stories css */
+
+.card{
+    padding: 15px;
+}
+.card h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* start Doctor css */
+
+#Doctor{
+    background-color: #d8e3ed;
+}
+
+.doctor-name {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#doctor-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doc-info-container {
+    padding: 20px;
+    background-color: white;
+}
+
+.doc-image {
+    width: auto;
+    height: 350px;
+    margin-bottom: 30px;
+    background-color: pink;
+}
+
+.doc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.doc-info h4 {
+    font-style: italic;
+    color: red;
+}
+
+.doc-info p {
+    font-weight: 600;
+    color: gray;
+}
+
+.doc-info .doc-degree {
+    font-size: 13px;
+}
+
+
+/* hospital css */
+#hospital-carousel{
+    padding: 20px 100px;
+}
+.h-info-container {
+    border-radius: 10px;
+    border: 2px dashed red;
+}
+
+.h-info-container .h-image img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.h-info-container .h-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.h-info-container .h-info h3 {
+    font-size: 22px;
+}
+
+.h-info-container .h-info p {
+    font-weight: 600;
+    font-size: 18px;
+    font-style: italic;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.hospital-sub-heading {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.hospital-sub-heading a {
+    color: red;
+}
+
+
+/* footer css */
+#contact{
+    background-color: #4791ff;
+    padding: 40px;
+}
+
+#contact {
+    text-align: center;
+} 
+.contact1{
+    text-align: center;
+}
+
+#contact-footer{
+    background-color: #0b2432;
+    padding: 60px;
+}
+
+#contact-footer ul{
+    cursor: pointer;
+}
+#contact-footer h4{
+    color: white;
+
+}
+
+.cont-card{
+    margin: -80px 0px 40px 0px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+
+
+
+/* end with footer css */
+
+
+@media screen and (max-width:1024px) {
+    .top-header .info {
+        display: none;
+    }
+
+    .top-header .dr-img {
+        display: none;
+    }
+    .nav-link{
+        margin: 0px 0px 0px 0px;
+    }
+    .hero-text{
+        margin: 40px 0px 0px 20px;
+    }
+    #treatment{
+        display: none;
+    }
+    #treatment hr{
+        display: none;
+    }
+    .cont-card{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .navbar-brand{
+        display: none;
+    }
+
+    .affiya-logo{
+        width: 350px;
+    }
+   
+}
+
